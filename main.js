@@ -23,7 +23,8 @@ $(document).ready(function() {
                         <p class="card-text">${results[i].snippet}</p>
                     </div>
                   </a>
-                </div>`;
+                </div>
+                <br>`;
 
                 $('#results').append(html);
             }

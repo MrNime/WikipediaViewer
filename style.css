@@ -1,0 +1,18 @@
+.navbar {
+    margin-bottom: 2rem;
+}
+
+.searchContainer {
+    text-align: center;
+}
+
+.card > a {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    background-color: lightgrey;
+    text-decoration: none;
+}
+
+.card > a:hover {
+    border-left: 3px solid black;
+}
