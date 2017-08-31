@@ -15,7 +15,17 @@ $(document).ready(function() {
             console.log(results);
             for(let i = 0; i < results.length; i++) {
                 const url = `https://en.wikipedia.org/wiki/${results[i].title.replace(/ /g, "_")}`;
-                $('#results').append(url);
+                let html =
+                `<div class="card">
+                  <a href="${url}" target="_blank">
+                    <div class="card-body">
+                        <h4 class="card-title">${results[i].title}</h4>
+                        <p class="card-text">${results[i].snippet}</p>
+                    </div>
+                  </a>
+                </div>`;
+
+                $('#results').append(html);
             }
         });
     });
