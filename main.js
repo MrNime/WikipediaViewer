@@ -5,7 +5,7 @@ $(document).ready(function() {
             url: 'https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=' + searchVal,
             // data: queryData,
             dataType: 'jsonp',
-            type: 'POST',
+            // type: 'POST',
             headers: { 'Api-User-Agent': 'Example/1.0' },
         }).done(function(data){
             $('#results').empty();
