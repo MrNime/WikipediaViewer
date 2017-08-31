@@ -4,6 +4,7 @@ $(document).ready(function() {
         $.ajax({
             url: 'https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=' + searchVal,
             // data: queryData,
+            //json fails, use jsonp, makes type automatically GET
             dataType: 'jsonp',
             // type: 'POST',
             headers: { 'Api-User-Agent': 'Example/1.0' },
